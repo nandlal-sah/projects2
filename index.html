@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Democlass</title>
+    <meta name="description" content="A demo portfolio for a thoughtful digital designer and front-end developer.">
+    <title>Samira Khan | Digital Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="site-header">
+        <a class="brand" href="#top" aria-label="Samira Khan home">SK<span>.</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span>Menu</span><span class="menu-icon" aria-hidden="true"><i></i><i></i></span></button>
+        <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+            <a href="#work">Selected work</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+    <main id="top">
+        <section class="hero section-shell">
+            <div class="hero-copy reveal"><p class="eyebrow"><span class="status-dot"></span> Available for select projects · 2024—25</p><h1>Ideas with<br><em>somewhere</em><br>to go.</h1><p class="hero-intro">I’m Samira, a digital designer and front-end developer making brands, products, and places feel a little more human.</p><a class="text-link" href="#work">Scroll to explore <span>↓</span></a></div>
+            <div class="hero-art reveal" aria-label="Abstract portrait of Samira Khan" role="img"><div class="art-label">Designer<br>Developer</div><div class="art-shape art-shape-one"></div><div class="art-shape art-shape-two"></div><div class="art-photo"></div><div class="art-caption">A little<br>about me <span>↘</span></div></div>
+        </section>
+        <section id="work" class="work section-shell"><div class="section-heading reveal"><span class="section-number">01</span><h2>Selected work</h2><span class="heading-rule"></span></div><div class="project-grid">
+            <a class="project project-large reveal" href="#contact"><div class="project-visual visual-cobalt"><span class="project-stamp">01 / 03</span><span class="visual-word">morrow</span><span class="project-arrow">↗</span></div><div class="project-meta"><div><h3>Morrow wellness</h3><p>Brand identity · Digital experience</p></div><span>2024</span></div></a>
+            <a class="project project-small reveal" href="#contact"><div class="project-visual visual-peach"><span class="project-stamp">02 / 03</span><span class="visual-sun">✳</span><span class="visual-note">Good things<br>take time.</span><span class="project-arrow">↗</span></div><div class="project-meta"><div><h3>Kindred coffee</h3><p>Packaging · Art direction</p></div><span>2023</span></div></a>
+            <a class="project project-small reveal" href="#contact"><div class="project-visual visual-yellow"><span class="project-stamp">03 / 03</span><span class="visual-device">NOVA<br><small>music for moving</small></span><span class="project-arrow">↗</span></div><div class="project-meta"><div><h3>Nova radio</h3><p>Product design · Development</p></div><span>2023</span></div></a>
+        </div></section>
+        <section id="about" class="about section-shell"><div class="section-heading reveal"><span class="section-number">02</span><h2>A bit about me</h2><span class="heading-rule"></span></div><div class="about-layout"><p class="about-lede reveal">Good work starts with a good question. I bring curiosity, clarity, and a little playful energy to every brief.</p><div class="about-copy reveal"><p>For the last eight years, I’ve partnered with ambitious people and teams to turn early thoughts into things worth using. My practice lives somewhere between visual identity, interaction design, and code.</p><p>Based in London, working everywhere. Currently collaborating with independent founders and kind, clever studios.</p><a class="text-link" href="#contact">More about my approach <span>↗</span></a></div></div></section>
+        <section id="contact" class="contact section-shell"><p class="eyebrow reveal">Have a good one?</p><h2 class="reveal">Let’s make it<br><em>real.</em></h2><form class="contact-form reveal"><label for="email">Your email</label><div class="form-row"><input id="email" name="email" type="email" placeholder="you@example.com" required><button type="submit" aria-label="Send email">Send <span>↗</span></button></div><p class="form-message" role="status"></p></form></section>
+    </main>
+    <footer class="site-footer section-shell"><span>© <span id="year"></span> Samira Khan</span><span>Designed with intention <span class="footer-mark">✳</span></span><a href="#top">Back to top ↑</a></footer>
+    <script src="app.js"></script>
 </body>
 </html>
